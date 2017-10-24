@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.chandrimaghosh.madtest.com.example.chandrimaghosh.chandrimaghosh.MainActivity"
+    tools:showIn="@layout/activity_main"><![CDATA[
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+    ]]>
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:layout_x="29dp"
+        android:layout_y="63dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/finalBotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="48dp"
+            android:layout_y="88dp"
+            android:text="Final Project" />
+
+        <Button
+            android:id="@+id/communication_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="92dp"
+            android:layout_y="139dp"
+            android:onClick="onCommunication"
+            android:text="Communication" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="67dp"
+            android:layout_y="176dp"
+            android:onClick="openScraggleMain"
+            android:text="Word Game" />
+
+        <Button
+            android:id="@+id/dictionary_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="63dp"
+            android:layout_y="222dp"
+            android:onClick="openDictionary"
+            android:text="Dictionary" />
+
+        <Button
+            android:id="@+id/twoplayerwordgame_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="45dp"
+            android:layout_y="266dp"
+            android:text="Two Player Word Game" />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/error_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/error_button"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.91"
+            android:layout_x="85dp"
+            android:layout_y="300dp"
+            android:onClick="openAboutMe"
+            android:text="ABOUT" />
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/error_button"
+            android:layout_x="53dp"
+
+            android:layout_y="345dp"
+            android:onClick="quitApplication"
+            android:text="QUIT" />
+
+        <Button
+            android:id="@+id/tictactoe_button"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_x="21dp"
+            android:layout_y="387dp"
+            android:onClick="launchTicTacToe"
+            android:text="TIC TAC TOE" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/error_button"
+        android:layout_width="121dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/quit_button"
+        android:layout_alignStart="@+id/quit_button"
+        android:layout_below="@+id/tictactoe_button"
+        android:layout_x="222dp"
+
+        android:layout_y="82dp"
+        android:onClick="throwErrorFromHome (MainActivity)"
+        android:text="Error" />
+
+
+</AbsoluteLayout>

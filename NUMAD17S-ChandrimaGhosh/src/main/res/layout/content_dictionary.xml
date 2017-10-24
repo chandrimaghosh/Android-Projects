@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dictionary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.neu.madcourse.chandrimaghosh.dictionary.dictionary"
+    tools:showIn="@layout/activity_dictionary">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/dict_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/hint_listview"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_height="180dp"
+        android:layout_below="@+id/dict_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Return To Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/return_home_button"
+        android:onClick="returnToMenu"
+        android:layout_weight="1"
+        android:layout_below="@+id/hint_listview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/return_home_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="CLEAR"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_button"
+            android:onClick="clearText"
+
+
+            android:layout_below="@+id/return_home_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.56" />
+
+        <Button
+            android:text="Acknowledgement"
+            android:layout_height="match_parent"
+            android:id="@+id/acknowledgement_button"
+            android:onClick="openAck"
+            android:layout_below="@+id/hint_listview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

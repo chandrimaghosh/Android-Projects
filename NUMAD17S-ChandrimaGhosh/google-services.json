@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "248436291281",
+    "firebase_url": "https://numads17final-chandrima.firebaseio.com",
+    "project_id": "numads17final-chandrima",
+    "storage_bucket": "numads17final-chandrima.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248436291281:android:9859c9a79cb8161a",
+        "android_client_info": {
+          "package_name": "edu.neu.madcourse.chandrimaghoshfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248436291281-rk9daoolnpvrk2cgi09k3amrb3ccdpsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtxDk4_W563s5XigDACdbtndehd24KTk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

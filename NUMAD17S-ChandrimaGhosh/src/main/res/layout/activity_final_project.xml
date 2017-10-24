@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.neu.madcourse.chandrimaghosh.FinalProject.FinalProjectActivity">
+
+    <TextView
+        android:id="@+id/appDescTextView"
+        android:layout_width="321dp"
+        android:layout_height="227dp"
+        android:layout_x="30dp"
+        android:layout_y="22dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/projectAckButton"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_x="36dp"
+        android:layout_y="354dp"
+        android:onClick="onAckWearableActivityClick"
+        android:text="Acknowledgements" />
+
+    <Button
+        android:id="@+id/launchappButton"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="284dp"
+        android:onClick="goToApp"
+        android:text="Launch MemorMe" />
+</AbsoluteLayout>
